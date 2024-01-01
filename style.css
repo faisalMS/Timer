@@ -1,0 +1,55 @@
+:root {
+  --primary: rgb(82, 75, 77);
+  --dark: #ecd2d2;
+  --darkdark: #0e1010;
+  --light: #f3f4f6;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fire sans", sans-serif;
+}
+body {
+  background: var(--dark);
+  color: var(--light);
+}
+.watch {
+  text-align: center;
+  background-color: var(--darkdark);
+  width: 200%;
+  max-width: 460px;
+  margin: 8rem auto;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+.watch .time {
+  font-size: 5rem;
+  font-weight: 460;
+  margin-bottom: 2rem;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  color: var(--light);
+  font-size: 1.125rem;
+  background-color: var(--primary);
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+}
+button:hover {
+  opacity: 0.7;
+}
+button:active {
+  background-color: var(--dark);
+}
